@@ -1,166 +1,255 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Active Volunteer Projects</title>
-	<meta charset="utf-8">
-	<meta name="author" content="couch.ca">
-	<meta name="description" content="Active Volunteer Projects. Info on how to Donate CPU Cycles, Storage, and Bandwidth">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Couch.ca | Volunteer Infrastructure for Science & Public Connectivity</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <meta name="description" content="Couch.ca operates volunteer-supported computing and network infrastructure, including BOINC research servers and public NTP time services. Our mission is to strengthen scientific collaboration and ensure reliable, open access to essential digital systems." />
+  <meta name="author" content="Couch.ca" />
+
+  <style>
+  :root {
+    --ink:#111; 
+    --muted:#475569; 
+    --line:#e5e7eb; 
+    --brand:#1c6ee8; 
+    --bg:#fff;
+  }
+  html,body {
+    margin:0; 
+    padding:0; 
+    background:var(--bg); 
+    color:var(--ink); 
+    font-family:Arial,Helvetica,sans-serif; 
+    line-height:1.55;
+  }
+  a {
+    color:var(--brand);
+    text-decoration:none;
+  }
+  a:hover { text-decoration:underline; }
+  header,footer {
+    background:#f5f7fa;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+  }
+  footer { border-top:1px solid #ddd; }
+  .wrap { max-width:1000px; margin:0 auto; padding:16px 16px 28px; }
+  h1,h2,h3 { color:#1c6ee8; margin:0 0 8px; }
+  p { margin:0 0 10px; }
+  .hero { padding:10px 0 0; }
+  .muted { color:var(--muted); }
+  .section { margin-top:24px; border-top:1px solid var(--line); padding-top:14px; }
+
+  /* Collapsible sections */
+  details {
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:10px 12px;
+    background:#fff;
+  }
+  details + details { margin-top:10px; }
+
+  summary {
+    cursor:pointer;
+    font-weight:700;
+    list-style:none;
+    position:relative;
+    padding-left:1.2em;
+  }
+  summary::-webkit-details-marker { display:none; }
+
+  /* Plus/minus icons with animation */
+  summary::before {
+    content:"+";
+    position:absolute;
+    left:0;
+    color:var(--brand);
+    font-size:1.2em;
+    line-height:1;
+    transition:transform 0.25s ease, color 0.25s ease;
+  }
+  details[open] summary::before {
+    content:"−";
+    transform:rotate(0deg);
+    color:var(--brand);
+  }
+
+  .tight ul { margin:6px 0 0 18px; }
+  ul { margin:0 0 8px 18px; }
+  .stats { text-align:center; }
+  .stats img { width:40%; max-width:400px; border:1px solid #ccc; border-radius:6px; }
+  .cols-2 { columns:2; column-gap:22px; }
+  .cols-2 li { break-inside:avoid; }
+  li { margin:4px 0; }
+  .row { display:flex; gap:16px; flex-wrap:wrap; }
+  .grow { flex:1 1 420px; }
+  .card { border:1px solid var(--line); border-radius:8px; padding:12px; background:#fff; }
+  @media (max-width:640px) {
+    .stats img { width:70%; max-width:420px; }
+    .cols-2 { columns:1; }
+  }
+</style>
+
 </head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Couch.ca</h1>
+      <p class="muted">Volunteer Infrastructure for Science and Public Connectivity</p>
+    </div>
+  </header>
 
-<div style="font-family: Arial, Helvetica, sans-serif; font-size:30px;">
-	Active Volunteer Projects
-</div>
-<br>
-Information on how to donate spare CPU and GPU processing power, hard drive storage, and internet bandwidth for science and research.
-<br>
-<br>
-<hr>
+  <main class="wrap">
+    <section id="intro" class="hero">
+      <p>Couch.ca is a volunteer-driven non-profit organization dedicated to supporting open, reliable, and globally accessible infrastructure. We operate public computing and network services, including BOINC research servers and NTP time synchronization hosts, to strengthen scientific collaboration and digital reliability worldwide.</p>
+    </section>
 
-<body style="font-family: Arial, Helvetica, sans-serif;">	
-	BOINC Software. Run research projects in the background by allowing your computer to join thousands of other computers in solving many of todays critical issues and problems. - <a href="https://boinc.berkeley.edu" target="_blank">How to Join</a>
-	<br>
-	<br>
-	Einstein@home Project.  Looks for black holes, and pulsars - <a href="https://einsteinathome.org/" target="_blank">Info</a>
-	<br>
-	<br>
-	MilkyWay@home Project.  Mapping out the Milkyway Galaxy - <a href="https://milkyway.cs.rpi.edu/milkyway/" target="_blank">Info</a>
-	<br>
-	<br>
-	NumberFields@home Project. Searches for fields with special properties in algebraic number theory - <a href="https://numberfields.asu.edu/NumberFields/" target="_blank">Info</a>
-	<br>
-	<br>
-	GPUGrid.net Project. Distributed computing infrastructure devoted to biomedical research - <a href="https://www.gpugrid.net/" target="_blank">Info</a>
-	<br>
-	<br>
-	
-	Local Server Contributions
-	<br>
-	<a href="https://www.boincstats.com/stats/-1/user/detail/2e71e333330814fc7149e1cd41e868f2/overview" target="_blank">
-		<img src="https://www.boincstats.com/signature/-1/user/82921688001/sig.png"/>
-	</a>
-	<br>
-	<a href="https://signature.statseb.fr/index.py?cpid=2e71e333330814fc7149e1cd41e868f2" target="_blank">
-		<img src="https://signature.statseb.fr/sig.py?cpid=2e71e333330814fc7149e1cd41e868f2">
-	</a>
-	<br>
-	<hr>
-	Network Time Protocol(NTP) Server<br>
-	All electronics need to know what time it is.  From your TV, to the Credit Card purchase you just made.  Many of these electronics use the publicly funded, and operated NTP Pool.
-	<br>
-	<br>
-	<a href="https://www.ntppool.org/en/join.html" target="_blank">Join NTP Pool</a>
-	<br>
-	<br>
-	<a href="http://support.ntp.org/bin/view/Servers/WebHome#Adding_your_Server_to_the_Lists" target="_blank">Join Public NTP List</a>
-	<br>
-	<br>
-	<a href="https://web.beta.grundclock.com/en/join.html" target="_blank">Beta NTP Test site</a>
-	<br>
-	<br>
-	Local Public Time Server
-	<br>
-	Stratum 1 - 
-	<a href="https://www.ntppool.org/scores/wyman.couch.ca" target="_blank">Pool</a> - 
-	<a href="http://support.ntp.org/bin/view/Servers/PublicTimeServer001623" target="_blank">Server</a> 
-	<br>
-	<br>
-	Stratum 2 - 
-	<a href="https://www.ntppool.org/scores/server.couch.ca" target="_blank">Pool</a> - 
-	<a href="http://support.ntp.org/bin/view/Servers/PublicTimeServer001624" target="_blank">Server</a> 
-	<br>
-	<br>
-	<hr>
-	Asteroid Earth Impact Monitoring with JPL - <a href="https://cneos.jpl.nasa.gov/sentry/" target="_blank">Info</a>
-	<br>
-	<br>
-	<hr>
-	Internet Storm Centre (ISC)<br>
-	<br>
-	ISC is a volunteer run organization.  It provides free analysis and warning services to thousands of Internet users and organizations, and is actively working with Internet Service Providers to fight back against malicious attackers.
-	<br>
-	<br>
-	DShield Honeypot - <a href="https://isc.sans.edu/honeypot.html">Info</a>
-	<br>
-	<br>
-	404 Error Page Reporting Project - <a href="https://isc.sans.edu/tools/404project.html">Info</a><br>
-	<br>
-	<hr>
+    <section id="boinc" class="section">
+      <h2>Distributed Computing with BOINC</h2>
 
-	Seeding legal torrents hosting research data, Wikipedia backups, and Reddit backups.
-	<br>
-	<br>
-	<a href="http://academictorrents.com/browse.php?sort_field=times_completed&sort_dir=DESC" target="_blank">Free Academic Torrents</a>
-	<br>
-	<br>
-	<a href="https://fosscad.org/fc/cad/" target="_blank">Free AutoCad Files Torrent</a>
-	<br>
-	<br>
-	<a href="https://meta.wikimedia.org/wiki/Data_dump_torrents#English_Wikipedia" target="_blank">Wikipedia Backup Torrents</a>
-	<br>
-	<br>
-	<a href="https://wiki.kiwix.org/wiki/Content" target="_blank">Wikipedia Offline Torrents</a>
-	<br>
-	<br>
-	<a href="http://www.gutenberg.org/wiki/Gutenberg:The_CD_and_DVD_Project#Downloading_Via_BitTorrent" target="_blank">Open Library - Gutenberg Project Torrents</a>
-	<br>
-	<br>
-	<a href="https://archive.org/details/bittorrent" target="_blank">Open Archive Torrents</a>
-	<br>
-	<br>
-	<a href="https://www.libreoffice.org/download/download/" target="_blank">Libre Office Torrents</a>
-	<br>
-	<br>
-	<a href="https://libgen.is/repository_torrent/" target="_blank">Library Genesis - Online Library</a>
-	<br>
-	<br>
-	<a href="https://mega.nz/folder/OUdgADyS#XYjh4U02xI0qB-O7Nl3FEg" target="_blank">Carl Herold - Computer Science for Everyone</a>
-	<br>
-	<br>
-	<a href="https://www.reddit.com/r/datasets/comments/3bxlg7/i_have_every_publicly_available_reddit_comment/" target="_blank">Backed up Reddit Data</a>
-	<br>
-	<br>
-	
-	<hr>
-	Seeding Linux Distribution torrents.
-	<br>
-	<br>
-	<a href="https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit" target="_blank">Raspberry Pi Operating System Torrents</a>
-	<br>
-	<br>
-	<a href="https://linuxmint.com/torrents/" target="_blank">Linux Mint Torrents</a>
-	<br>
-	<br>
-	<a href="https://linuxtracker.org/index.php" target="_blank">Linux Tracker Torrents</a>
-	<br>
-	<br>
-	<a href="http://www.slackware.com/getslack/torrents.php" target="_blank">Slackware Linux Torrents</a>
-	<br>
-	<br>
-	<a href="https://www.kali.org/downloads/" target="_blank">Kali Linux Torrents</a>
-	<br>
-	<br>
-	<a href="https://www.debian.org/CD/torrent-cd/" target="_blank">Debian Linux Torrents</a>
-	<br>
-	<br>
-	<a href="https://www.netrunner.com/download/" target="_blank">NetRunner Linux Torrents</a>
-	<br>
-	<br>
-	<a href="https://mxlinux.org/torrent-files/" target="_blank">MX Linux Torrents</a>
-	<br>
-	<br>
-	<a href="https://manjaro.org/download/" target="_blank">Manjaro Linux Torrents</a>
-	<br>
-	<br>
-	<hr>
-	<a href="https://www.buymeacoffee.com/couch.ca" target="_blank">
-		<img src="donate_button.png"/>
-	</a>
-	<br>
-	<br>
+      <details open>
+        <summary>Overview and How to Join</summary>
+        <p><strong>BOINC Software:</strong> run research projects in the background by allowing your computer to join thousands of others. <a href="https://boinc.berkeley.edu" target="_blank" rel="noopener">How to Join</a></p>
+        <ul class="tight">
+          <li><strong>Einstein@Home</strong> - searches for black holes and pulsars - <a href="https://einsteinathome.org/" target="_blank" rel="noopener">Info</a></li>
+          <li><strong>MilkyWay@Home</strong> - maps the Milky Way galaxy - <a href="https://milkyway.cs.rpi.edu/milkyway/" target="_blank" rel="noopener">Info</a></li>
+          <li><strong>GPUGrid.net</strong> - biomedical research on GPUs - <a href="https://www.gpugrid.net/" target="_blank" rel="noopener">Info</a></li>
+        </ul>
+      </details>
 
-©2025
+      <details open>
+        <summary>Server Contributions</summary>
+        <div class="stats">
+          <a href="https://www.boincstats.com/stats/-1/user/detail/2e71e333330814fc7149e1cd41e868f2/overview" target="_blank" rel="noopener">
+            <img src="https://www.boincstats.com/signature/-1/user/82921688001/sig.png" alt="BOINC Stats Signature">
+          </a>
+          <br><br>
+          <a href="https://signature.statseb.fr/index.py?cpid=2e71e333330814fc7149e1cd41e868f2" target="_blank" rel="noopener">
+            <img src="https://signature.statseb.fr/sig.py?cpid=2e71e333330814fc7149e1cd41e868f2" alt="CPID Signature">
+          </a>
+        </div>
+      </details>
+    </section>
+
+    <section id="jpl" class="section">
+      <h2>Asteroid Earth Impact Monitoring</h2>
+      <details open>
+        <summary>JPL Sentry public information</summary>
+        <p>Couch.ca provides a link to NASA’s Jet Propulsion Laboratory in monitoring potential asteroid impacts with Earth. The <a href="https://cneos.jpl.nasa.gov/sentry/" target="_blank" rel="noopener">Sentry system</a> provides public information about near-Earth object tracking and impact probability analysis.</p>
+      </details>
+    </section>
+
+    <section id="ntp" class="section">
+      <h2>Network Time Protocol (NTP) Services</h2>
+
+      <div class="row">
+        <div class="grow card">
+          <p>The Network Time Protocol keeps computers and devices synchronized to accurate time by connecting them to trusted servers. At Couch.ca, we operate public NTP servers that help ensure reliable, precise timekeeping for users and networks worldwide.</p>
+        </div>
+        <div class="grow card">
+          <strong>Local public time servers</strong>
+          <ul class="tight">
+            <li>Stratum 1 - <a href="https://www.ntppool.org/scores/wyman.couch.ca" target="_blank" rel="noopener">Pool</a> | <a href="http://support.ntp.org/bin/view/Servers/PublicTimeServer001623" target="_blank" rel="noopener">Server</a></li>
+            <li>Stratum 2 - <a href="https://www.ntppool.org/scores/server.couch.ca" target="_blank" rel="noopener">Pool</a> | <a href="http://support.ntp.org/bin/view/Servers/PublicTimeServer001624" target="_blank" rel="noopener">Server</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <details open>
+        <summary>Contribute and learn more</summary>
+        <ul class="tight">
+          <li><a href="https://www.ntppool.org/en/join.html" target="_blank" rel="noopener">Join the NTP Pool</a></li>
+          <li><a href="http://support.ntp.org/bin/view/Servers/WebHome#Adding_your_Server_to_the_Lists" target="_blank" rel="noopener">Join Public NTP List</a></li>
+          <li><a href="https://web.beta.grundclock.com/en/join.html" target="_blank" rel="noopener">Beta NTP Pool test site</a></li>
+        </ul>
+      </details>
+    </section>
+
+    <section id="isc" class="section">
+      <h2>Internet Storm Center</h2>
+      <details open>
+        <summary>What we support</summary>
+        <p>ISC is a volunteer-run organization that provides free analysis and warning services to help protect Internet users and organizations. At Couch.ca, we support this mission by operating infrastructure that helps detect threats and strengthen the Internet’s overall security and resilience.</p>
+      </details>
+      <details open>
+        <summary>Projects and references</summary>
+        <ul class="tight">
+          <li>DShield Honeypot, <a href="https://isc.sans.edu/honeypot.html" target="_blank" rel="noopener">Info</a></li>
+          <li>404 Error Page Reporting Project, <a href="https://isc.sans.edu/tools/404project.html" target="_blank" rel="noopener">Info</a></li>
+        </ul>
+      </details>
+    </section>
+
+    <section id="data" class="section">
+      <h2>Open Data and Linux Distribution Seeding</h2>
+
+      <details open>
+        <summary>Research, archives, and learning links</summary>
+        <ul class="cols-2">
+          <li><a href="http://academictorrents.com/browse.php?sort_field=times_completed&sort_dir=DESC" target="_blank" rel="noopener">Academic Torrents</a></li>
+          <li><a href="https://meta.wikimedia.org/wiki/Data_dump_torrents#English_Wikipedia" target="_blank" rel="noopener">Wikipedia backups</a></li>
+          <li><a href="https://wiki.kiwix.org/wiki/Content" target="_blank" rel="noopener">Wikipedia offline</a></li>
+          <li><a href="http://www.gutenberg.org/wiki/Gutenberg:The_CD_and_DVD_Project#Downloading_Via_BitTorrent" target="_blank" rel="noopener">Project Gutenberg</a></li>
+          <li><a href="https://archive.org/details/bittorrent" target="_blank" rel="noopener">Internet Archive torrents</a></li>
+          <li><a href="https://www.libreoffice.org/download/download/" target="_blank" rel="noopener">LibreOffice torrents</a></li>
+          <li><a href="https://libgen.is/repository_torrent/" target="_blank" rel="noopener">Library Genesis</a></li>
+          <li><a href="https://mega.nz/folder/OUdgADyS#XYjh4U02xI0qB-O7Nl3FEg" target="_blank" rel="noopener">CS for Everyone</a></li>
+          <li><a href="https://www.reddit.com/r/datasets/comments/3bxlg7/i_have_every_publicly_available_reddit_comment/" target="_blank" rel="noopener">Reddit dataset</a></li>
+          <li><a href="https://fosscad.org/fc/cad/" target="_blank" rel="noopener">Free AutoCAD files</a></li>
+        </ul>
+      </details>
+
+      <details open>
+        <summary>Linux distributions</summary>
+        <ul class="cols-2">
+          <li><a href="https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit" target="_blank" rel="noopener">Raspberry Pi OS</a></li>
+          <li><a href="https://linuxmint.com/torrents/" target="_blank" rel="noopener">Linux Mint</a></li>
+          <li><a href="https://linuxtracker.org/index.php" target="_blank" rel="noopener">Linux Tracker</a></li>
+          <li><a href="http://www.slackware.com/getslack/torrents.php" target="_blank" rel="noopener">Slackware</a></li>
+          <li><a href="https://www.kali.org/downloads/" target="_blank" rel="noopener">Kali Linux</a></li>
+          <li><a href="https://www.debian.org/CD/torrent-cd/" target="_blank" rel="noopener">Debian</a></li>
+          <li><a href="https://www.netrunner.com/download/" target="_blank" rel="noopener">Netrunner</a></li>
+          <li><a href="https://mxlinux.org/torrent-files/" target="_blank" rel="noopener">MX Linux</a></li>
+          <li><a href="https://manjaro.org/download/" target="_blank" rel="noopener">Manjaro</a></li>
+        </ul>
+      </details>
+    </section>
+
+    <section id="donate" class="section">
+      <h2>Support the Project</h2>
+      <div class="row">
+        <div class="grow">
+          <p>Your support helps with hardware, hosting, and connectivity costs.</p>
+        </div>
+        <div class="grow">
+          <a href="https://www.buymeacoffee.com/couch.ca" target="_blank" rel="noopener">
+            <img src="donate_button.png" alt="Donate to Couch.ca">
+          </a>
+        </div>
+      </div>
+    </section>
+	<section id="contact" class="section">
+	  <h2>Contact</h2>
+	  <p><strong>Headquarters:</strong> Victoria, Canada</p>
+	  <p>
+		<img src="contact.png" alt="contact info" style="width:20%;height:auto;">
+	  </p>
+	</section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© <span id="year"></span> Couch.ca, a volunteer-driven non-profit initiative supporting distributed science and global connectivity.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
-
 </html>
-
