@@ -1,0 +1,17 @@
+services:
+  birdnet-go:
+    container_name: birdnet-go
+    image: ghcr.io/tphakala/birdnet-go:latest
+    restart: unless-stopped
+    privileged: true
+    ports:
+      - "45001:8080" # runs the local server on http://<YOUR-IP>:45001
+    environment:
+      - TZ=America/Vancouver
+    volumes:
+      - ./config:/config
+      - ./data:/data
+    devices:
+      - /dev/snd:/dev/snd
+    group_add:
+      - audio
